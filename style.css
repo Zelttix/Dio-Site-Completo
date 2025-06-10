@@ -1,0 +1,447 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#logo {
+    position: fixed;
+    top: 0px;
+    left: 100px;
+    height: 400px;
+    z-index: 10;
+}
+
+h1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 80px;
+    background-color: rgb(72, 117, 117);
+    text-align: center;
+    padding: 170px 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    z-index: 9;
+    border-bottom: 5px solid rgb(137, 179, 199);;
+}
+
+#sobre {
+    position: fixed;
+    top: 450px;
+    left: 50px;
+    background-color: rgb(72, 117, 117);
+    padding: 50px 150px;
+    width: 200px;
+    text-align:center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border: 5px solid rgb(137, 179, 199);
+    border-radius: 25px;
+    font-weight: 900;
+    color: white;
+    z-index: 99;
+    transition: transform 0.5s, background-color 0.5s;
+}
+#sobre:hover {
+    background-color:rgb(121, 175, 175);
+     transform: scale(1.05);
+}
+
+#atendimento {
+    position: fixed;
+    top:600px;
+    left:50px;
+    background-color: rgb(72, 117, 117);
+    padding: 38px 150px;
+    width: 200px;
+    text-align:center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border: 5px solid rgb(137, 179, 199);
+    border-radius: 25px;
+    font-weight: 900;
+    color: white;
+    z-index: 99;
+    transition: transform 0.5s, background-color 0.5s;
+}
+
+#atendimento:hover {
+    background-color:rgb(121, 175, 175);
+     transform: scale(1.05);
+}
+
+#contato {
+    position: fixed;
+    top: 750px;
+    left: 50px;
+    background-color: rgb(72, 117, 117);
+    padding: 50px 150px;
+    width: 200px;
+    text-align:center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border: 5px solid rgb(137, 179, 199);
+    border-radius: 25px;
+    font-weight: 900;
+    color: white;
+    z-index:99;
+    transition: transform 0.5s, background-color 0.5s;
+   
+}
+
+#contato:hover {
+    background-color:rgb(121, 175, 175);
+     transform: scale(1.05);
+}
+
+#suporte {
+    position: fixed;
+    top: 900px;
+    left: 50px;
+    background-color: rgb(72, 117, 117);
+    padding: 50px 150px;
+    width: 200px;
+    text-align:center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border: 5px solid rgb(137, 179, 199);
+    border-radius: 25px;
+    font-weight: 900;
+    color: white;
+    z-index:99;
+    transition: transform 0.5s, background-color 0.5s;
+}
+
+#suporte:hover {
+     background-color:rgb(121, 175, 175);
+     transform: scale(1.05);
+}
+
+.wrapper {
+  flex: 1 0 auto;
+  min-height: 150vh; /* força a rolagem */
+  padding: 20px;
+}
+
+.content {
+    position: absolute;
+    top: 450px;
+    width: 900px;
+    left: 800px;
+    background: rgb(72, 117, 117);
+    padding: 20px 100px;
+    text-align: center;
+    border: 5px solid rgb(137, 179, 199);
+    border-radius: 24px;
+    font-weight: 700;
+    font-size:20px;
+    color: white;
+    margin-bottom: 150px;
+}
+
+p {
+    text-decoration: none;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+
+
+.clinica { 
+    position: fixed;
+    left: 1980px;
+    margin-top: 430px;
+    display: flex;
+    justify-content: right;
+    z-index: 101;
+}
+
+.imagem-clinica {
+    border: 10px solid rgb(72, 117, 117);
+    border-radius: 25px;
+}
+
+.equipe {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    cursor: pointer;
+}
+
+.equipe-medica {
+background-color: rgb(72, 117, 117);
+    padding: 20px;
+    border: 5px solid rgb(137, 179, 199);
+    border-radius: 25px;
+    width: 700px;
+    margin: 700px  auto 20px auto;
+}
+
+.medico {
+ list-style-type: none;
+ background-color: rgb(90, 141, 141);
+ padding: 20px;
+ width: 200px;
+ text-align: center;
+ font-weight: 700;
+ color: white;
+ border: 4px solid white;
+ border-radius: 25px;
+ transition: transform 0.5s, background-color 0.5s;
+}
+
+.medico:hover {
+    background-color:rgb(137, 179, 199);
+    transform: scale(1.05);
+}
+
+.image-medico {
+    width: 120px;
+    height:120px;
+    border:3px solid rgb(137, 179, 199);
+    border-radius: 200px;
+}
+
+.info {
+   margin: 5px 0;
+   font-size: 18px;
+   font-variant: small-caps
+}
+
+.equipe-medica h2 {
+    color: white;
+    text-align: center;
+    font-size: 40px
+}
+
+.depoimentos {
+    margin: 60px auto 80px auto;
+    background-color: rgb(72, 117, 117);
+    padding: 20px;
+    width: 400px;
+    border: 4px solid rgb(137, 179, 199);
+    border-radius: 25px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.depoimentos h2 {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+#comentario1 {
+    background-color: white;
+    padding: 0px;
+    text-align: center;
+    border: 4px solid rgb(137, 179, 199);
+    border-radius: 25px;
+    font-size:18px;
+    font-weight: 700;
+    transition: transform 0.3s, background-color 0.3s;
+    cursor:pointer;
+}
+
+#comentario1:hover {
+    background-color: rgb(137, 179, 199);
+    transform: scale(1.05);
+}
+
+#comentario2 {
+    background-color: white;
+    padding: 2px;
+    text-align: center;
+    border: 4px solid rgb(137, 179, 199);
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    transition: transform 0.3s, background-color 0.3s;
+    cursor:pointer;
+}
+
+#comentario2:hover {
+    background-color: rgb(137, 179, 199);
+    transform: scale(1.05);
+}
+
+#comentario3 {
+    background-color: white;
+    padding: 2px;
+    text-align: center;
+    border: 4px solid rgb(137, 179, 199);
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    transition: transform 0.3s, background-color 0.3s;
+    cursor:pointer;
+}
+
+#comentario3:hover {
+    background-color: rgb(137, 179, 199);
+    transform: scale(1.05);
+}
+
+span {
+    text-transform: capitalize;
+    background-color:rgb(137, 179, 199);
+    display: block;
+    border-radius: 24px;
+}
+
+table, th, td {
+    text-align: center;
+    border: 7px solid rgb(137, 179, 199);
+    border-radius: 8px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+caption {
+    background-color: rgb(86, 135, 158);
+    padding: 5px;
+    font-size: 700;
+}
+
+tr:nth-child(even) {
+    background-color:rgb(88, 112, 122);
+}
+
+td:hover {
+    transform: scale(1.05);
+    cursor:pointer;
+}
+
+#p1 {
+    font-size: 900;
+    font-weight: 400;
+}
+
+.footer {
+    background-color: black;
+}
+
+#nome {
+    margin-left: 60px;
+}
+
+#idade {
+    margin-left: 137px
+}
+ 
+#sexo {
+    margin-left: 145px;
+}
+
+#servico {
+    margin-left: 151px;
+}
+
+#horario {
+    margin-left: 149px;
+}
+
+select {
+    width: 200px;
+    text-align: center;
+    height: 25px;
+    border-radius:25px;
+}
+
+input {
+    width: 200px;
+    text-align: center;
+    height: 25px;
+    border-radius:25px;
+    font-size: 700;
+}
+
+.modo-consulta {
+    border: 1px dashed rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.modo-consulta label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 40px;
+    margin-top: 10px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 100px;
+    background-color:rgb(86, 135, 158);
+    color: white;
+    font-size: 30px;
+    font-weight: 20px;
+    transition: transform 0.3s, background-color 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:rgb(137, 179, 199);
+    transform: scale(1.05);
+}
+
+button a  {
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    background-color: #3d3c3c;
+    color: white;
+    padding: 30px;
+    margin-top: -300px;
+    position: absolute;
+    top:2000px;
+    left:0;
+    z-index: 100;
+    width:100%;
+    height: 550px;
+}
+
+textarea {
+  background-color: white;
+  border: 4px solid rgb(137, 179, 199);
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  resize: none; /* Remove a opção de redimensionar, se quiser */
+  width: 100%;
+  box-sizing: border-box; /* Garante que padding não quebre o layout */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+textarea:focus {
+  border-color: rgb(90, 141, 141);
+  box-shadow: 0 0 10px rgba(90, 141, 141, 0.4);
+  outline: none;
+}

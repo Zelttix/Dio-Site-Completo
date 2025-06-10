@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clinica Pirodem</title>
+</head>
+<body>
+    <div class="cabecalho">
+    <a href="index.html">
+    <img id="logo" src="images/marcacao.webp" alt="logo da clinica" width="400px">
+    </a>
+    <h1>Clinica Pirodem</h1>
+    </div>
+    <div class="menu">
+    <a id="sobre" href="sobre.html">Sobre a Clinica</a> 
+    <a id="atendimento" href="atendimento.html">Horario de atendimento</a> 
+    <a id="contato" href="contato.html">Marcar</a>  
+    <a id="suporte" href="suporte.html">Suporte</a>
+    </div>
+    <div class="content">
+        <form method="post" autocomplete="off" name="marcacao" action="index.html">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label id="nome">Seu nome completo </label><input type="text" class="nome"><br>
+                <label id="idade">Sua Idade </label><input type="number" class="idade"><br>
+                <label id="sexo">Seu sexo </label><select name="role">
+                    <option>Selecione uma opção</option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                    <option>Prefiro não informar</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Consulta</legend>
+                <label id="servico">Serviço </label><select name="servico">
+                    <option>Selecione uma opção</option>
+                    <option>Psicólogia</option>
+                    <option>Cardiologia</option>
+                    <option>Oncologia</option>
+                    <option>Neurologia</option>
+                </select>
+                <br>
+                <label id="horario">Horário </label><select name="horario">
+                    <option>Selecione uma opção</option>
+                    <option>08h - 09h</option>
+                    <option>09h - 10h</option>
+                    <option>10h - 11h</option>
+                    <option>11h - 12h</option>
+                    <option>12h - 13h</option>
+                    <option>13h - 14h</option>
+                    <option>14h - 15h</option>
+                    <option>15h - 16h</option>
+                    <option>16h - 17h</option>
+                    <option>17h - 18h</option>
+                    <option>18h - 19h</option>
+                </select>
+                <br>
+                <div class="modo-consulta">
+                <label id="online">Online</label><input id="radio2" type="radio" name="atendimento" value="online">
+                <label id="presencial">Presencial</label><input id="radio1" type="radio" name="atendimento" value="presencial">
+                </div>
+            </fieldset>
+
+
+            <button type="submite" onclick="alert('Consulta agendada');">Enviar</button>
+        </form>
+
+    </div>
+    <div class="pai">
+        <div class="clinica">
+            <img src="images/clinica.webp" alt="clinica" class="imagem-clinica" width="800px" height="1000px" >
+        </div>
+    </div>
+            <div class="footer">
+            <div class="rodape">
+                <div class="endereco">
+                    <h4>Endereço:</h4>
+                    <p>
+                        Rua: R. Anuar Sadat, 541<br>
+                        Cidade: Montalvânia - MG, 39495-000<br>
+                        CNPJ: 00.001.222/0213-00
+                    </p>
+                </div>
+
+                <div class="contato">
+                    <h4>Contato:</h4>
+                    <p>
+                        Telefone: (31) 99768-7417<br>
+                        E-mail: atendimento@pirodem.com.br<br>
+                        Atendimento: Seg. a Sex. 08h - 19h
+                    </p>
+                </div>
+
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d966.0233112494449!2d-44.36729473037391!3d-14.421787999127728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x75777a225aa4511%3A0xe9f433791212fa5c!2sR.%20Anuar%20Sadat%2C%20541%20-%20Montalvania%2C%20Montalv%C3%A2nia%20-%20MG%2C%2039495-000!5e0!3m2!1spt-BR!2sbr!4v1749489950314!5m2!1spt-BR!2sbr"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
